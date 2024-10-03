@@ -3,8 +3,6 @@ class Car < ApplicationRecord
   has_many :reveiws
   has_many :favourites
 
-  validates :brand, presence: :true
-  validates :model, presence: :true
+  validates :brand, :model, :fuel, presence: :true
   validates :year, presence: :true, numericality: { only_integer: true }
-  validates :fuel, presence: :true
 end
