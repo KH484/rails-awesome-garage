@@ -8,12 +8,22 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
+puts "cleaning the database first..."
+Review.destroy_all
+Favourite.destroy_all
+Car.destroy_all
+Owner.destroy_all
+
+puts "creating owners..."
+
 yummy_mummy = Owner.create(nickname: "YummyMummy")
 only_italian = Owner.create(nickname: "ExceedTheLimit")
 vintage = Owner.create(nickname: "classic_like_my_car")
 boy_racer = Owner.create(nickname: "boy_racer")
 
-bmwx5 = Car.create(brand: "BMW", model: "X5", year: 2023, fuel: "Unleaded petrol", owner: yummy_mummy)
-ferrari = Car.create(brand: "Ferrari", model: "296 GTB", year: 2024, fuel: "Unleaded petrol", owner: only_italian)
-classic_car= Car.create(brand: "Cadillac", model: "16", year: 1930, fuel: "petrol", owner: vintage)
-bmwx3 = Car.create(brand: "Bugatti", model: "Chiron Super Sport", year: 2024, fuel: "Unleaded petrol", owner: boy_racer)
+puts "creating cars...."
+
+Car.create(brand: "BMW", model: "X5", year: 2023, fuel: "Unleaded petrol", owner: yummy_mummy)
+Car.create(brand: "Ferrari", model: "296 GTB", year: 2024, fuel: "Unleaded petrol", owner: only_italian)
+Car.create(brand: "Cadillac", model: "16", year: 1930, fuel: "petrol", owner: vintage)
+Car.create(brand: "Bugatti", model: "Chiron Super Sport", year: 2024, fuel: "Unleaded petrol", owner: boy_racer)
