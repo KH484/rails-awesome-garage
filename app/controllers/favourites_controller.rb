@@ -15,4 +15,10 @@ class FavouritesController < ApplicationController
   def index
     @favourites = Favourite.all
   end
+
+  def destroy
+    @favourite = Favourite.find(params[:id])
+    @favourite.destroy
+    redirect_to favourites_path(@favourite), status: :see_other
+  end
 end
