@@ -1,5 +1,4 @@
-// Specific CSS for your home-page
-.banner-home {
+.banner {
   background-position: center;
   height: 400px;
   background-repeat: no-repeat;
@@ -11,17 +10,9 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.h1-home {
+.h1 {
   color: rgb(0, 0, 0);
   font-size: 24px;
   font-weight: bold;
   margin: 20px;
-}
-
-.background-home{
-  background-color: black;
-  height: 100vh;
-  color: white;
-  font-size: 12px;
-  font-family: 'Courier New', Courier, monospace;
 }

@@ -12,4 +12,21 @@
   <%= f.submit %>
 <% end %>
 
-<%= @car.reviews.last.comment %>
+<% if @car.favourites.empty? %>
+  <%= simple_form_for [@car, @favourite] do |f| %>
+    <%= f.submit class: "btn btn-primary" %>
+  <% end %>
+<% else %>
+  <p class="btn btn-warning">car in your garage</p>
+<% end %>
+
+
+
+
+<h3><%= "Here are the reviews:" %></h3>
+<ul>
+<% @car.reviews.each do |review| %>
+<li><%= review.comment %></li>
+<li><%= "#{review.rating} *" %></li>
+<% end %>
+</ul>

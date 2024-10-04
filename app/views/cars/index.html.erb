@@ -1,6 +1,12 @@
-<h1>Welcome to the Gone In 60 Seconds Garage! </h1>
+<div class="banner" style="background-image: url(<%= asset_path 'banner.jpg' %>)">
+  <div class="text-start">
+    <h1>Gone In 60 Seconds</h1>
+  </div>
+</div>
 
-<ul>
+
+
+<ul class="listing">
   <% @cars.each do |car| %>
     <li><%= car.brand %></li>
     <li><%= car.model %></li>
