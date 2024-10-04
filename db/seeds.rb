@@ -16,14 +16,16 @@ Owner.destroy_all
 
 puts "creating owners..."
 
-yummy_mummy = Owner.create(nickname: "YummyMummy")
-only_italian = Owner.create(nickname: "ExceedTheLimit")
-vintage = Owner.create(nickname: "classic_like_my_car")
-boy_racer = Owner.create(nickname: "boy_racer")
+gabriela = Owner.create(nickname: "Gabriela")
+pamela = Owner.create(nickname: "Pamela")
+susan = Owner.create(nickname: "Susan")
+eleanor = Owner.create(nickname: "Eleanor")
+barbara = Owner.create(nickname: "Barbara")
 
 puts "creating cars...."
 
-Car.create(brand: "BMW", model: "X5", year: 2023, fuel: "Unleaded petrol", owner: yummy_mummy)
-Car.create(brand: "Ferrari", model: "296 GTB", year: 2024, fuel: "Unleaded petrol", owner: only_italian)
-Car.create(brand: "Cadillac", model: "16", year: 1930, fuel: "petrol", owner: vintage)
-Car.create(brand: "Bugatti", model: "Chiron Super Sport", year: 2024, fuel: "Unleaded petrol", owner: boy_racer)
+Car.create(brand: "Mercury", model: "Custom", year: 1950, fuel: "Unleaded petrol", owner: gabriela)
+Car.create(brand: "Chevrolet", model: "Corvette", year: 1953, fuel: "Unleaded petrol", owner: pamela)
+Car.create(brand: "Ford T", model: "Bird", year: 1956, fuel: "petrol", owner: susan)
+Car.create(brand: "Shelby", model: "Mustang GT500", year: 1967, fuel: "Unleaded petrol", owner: eleanor)
+Car.create(brand: "Aston Martin", model: "DB1", year: 1962, fuel: "Unleaded petrol", owner: barbara)
