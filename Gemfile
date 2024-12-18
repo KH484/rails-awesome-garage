@@ -20,7 +20,7 @@ gem "jbuilder"
 # gem "redis", ">= 4.0.1"
 gem "bootstrap", "~> 5.2"
 gem "autoprefixer-rails"
-gem "font-awesome-sass", "~> 6.1"
+gem "font-awesome-sass", "~> 6.7"
 gem "simple_form"
 gem "sassc-rails"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
